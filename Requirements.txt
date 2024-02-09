@@ -1,6 +1,6 @@
 joblib
 opencv-python
 seaborn
-sklearn
+scikit-learn
 scipy
 numpy
