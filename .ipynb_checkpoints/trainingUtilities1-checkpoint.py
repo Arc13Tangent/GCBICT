@@ -104,3 +104,11 @@ def trainModel(CoffeeDataset):
     print("\t\t\tqualified\tdefective")
     print("  Actual qualified \t{}\t\t{}".format(matrix[0, 0], matrix[0, 1]))
     print("  Actual defective \t{}\t\t{}".format(matrix[1, 0], matrix[1, 1]))
+
+    xticklabels = ['qualified', 'defective']
+    yticklabels = ['qualified', 'defective']
+    sns.heatmap(matrix, annot=True, fmt="d", cmap="Blues", cbar=False, yticklabels=yticklabels, xticklabels=xticklabels)
+    plt.xlabel('Predicted')
+    plt.ylabel('True')
+    plt.title('Confusion Matrix')
+    plt.show()

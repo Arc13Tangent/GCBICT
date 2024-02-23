@@ -137,3 +137,10 @@ def trainModel(CoffeeDataset):
             else:
                 print("      {}".format("{:4d}".format(matrix[i, j])), end='')
 
+    xticklabels = [f'Site {i+1}' for i in range(num)]
+    yticklabels = [f'Site {i+1}' for i in range(num)]
+    sns.heatmap(matrix, annot=True, fmt="d", cmap="Blues", cbar=False, yticklabels=yticklabels, xticklabels=xticklabels, vmax=200)
+    plt.xlabel('Predicted')
+    plt.ylabel('True')
+    plt.title('Confusion Matrix')
+    plt.show()
