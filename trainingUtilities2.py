@@ -142,5 +142,5 @@ def trainModel(CoffeeDataset):
     sns.heatmap(matrix, annot=True, fmt="d", cmap="Blues", cbar=False, yticklabels=yticklabels, xticklabels=xticklabels, vmax=200)
     plt.xlabel('Predicted')
     plt.ylabel('True')
-    plt.title('Confusion Matrix')
+    plt.title('Confusion matrix for the model')
     plt.show()

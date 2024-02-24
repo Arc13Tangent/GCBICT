@@ -30,12 +30,10 @@ def function2_Training():
         # Start training [T]
         elif command in ['T', 't']:
             try:
-                tic = time.time()
                 print('  Progress: ', end = '')
                 CoffeeDataset = createCoffeeDataset(inputPath)
                 trainModel(CoffeeDataset)
-                elapsed = time.time() - tic
-                print('  Done!\n  Elapsed time: {} sec.'.format(elapsed))
+                print('  Done!')
             except:
                 print('    ‼  Please check the directories.')
         elif command in ['E', 'e', 'Exit', 'exit', 'EXIT']:
@@ -47,9 +45,7 @@ def function2_Identify():
     inputPath = input("  🗏 Choose image file:\n    ")
     try:
         coffeeModel = joblib.load('Model/coffee_model_multi.pkl')
-        tic = time.time()
         predict(inputPath, coffeeModel)
-        elapsed = time.time() - tic
-        print('  Done! Elapsed time: {} sec.'.format(elapsed))
+        print('  Done!')
     except:
         print('    ‼ Please check the directory or model.')  

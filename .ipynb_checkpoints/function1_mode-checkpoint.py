@@ -3,6 +3,7 @@ from colorama import Fore, Style
 from trainingUtilities1 import createCoffeeDataset, trainModel
 import joblib
 from identifyUtility1 import predict
+from drawFeature import drawFeature
 
 def function1_Training():
     while True:
@@ -16,12 +17,11 @@ def function1_Training():
         # Start training [T]
         elif command in ['T', 't']:
             try:
-                tic = time.time()
                 print('  Progress: ', end = '')
                 CoffeeDataset = createCoffeeDataset(inputPath_defective, inputPath_qualified)
+                drawFeature(inputPath_defective, inputPath_qualified)
                 trainModel(CoffeeDataset)
-                elapsed = time.time() - tic
-                print('  Done!\n  Elapsed time: {} sec.'.format(elapsed))
+                print('  Done!')
             except:
                 print('    ‼  Please check the directories.')
         elif command in ['E', 'e', 'Exit', 'exit', 'EXIT']:
@@ -33,9 +33,7 @@ def function1_Identify():
     inputPath = input("  🗏 Choose image file:\n    ")
     try:
         coffeeModel = joblib.load('Model/coffee_model.pkl')
-        tic = time.time()
         predict(inputPath, coffeeModel)
-        elapsed = time.time() - tic
-        print('  Done! Elapsed time: {} sec.'.format(elapsed))
+        print('  Done!')
     except:
         print('    ‼ Please check the directory or model.')  
