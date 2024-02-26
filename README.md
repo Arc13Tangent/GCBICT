@@ -15,18 +15,24 @@ Open the terminal, navigate to ```GCBICT``` and type ```python main.py```:
 $ cd GCBICT
 $ python main.py # or python3 main.py
 ```
-![Screen Shot 2024-02-01 at 10 47 46](https://github.com/Arc13Tangent/GCBICT/assets/117557116/82453088-dcec-449d-9194-8d5b5842f687)
+![interface](https://github.com/Arc13Tangent/GCBICT/assets/117557116/bc46fabf-b862-4258-aba0-bbf6ee9447be)
+
 
 
 ## Example: Qualified-Defective separator
 ## Training
-![Screen Shot 2024-02-01 at 10 55 58](https://github.com/Arc13Tangent/GCBICT/assets/117557116/e567f3db-29ab-4028-84c4-5e2c0cb8e575)
+[folder.pdf](https://github.com/Arc13Tangent/GCBICT/files/14399364/folder.pdf)
+![training](https://github.com/Arc13Tangent/GCBICT/assets/117557116/690d0e50-2d8d-432d-86cf-edf4eb30e3d2)
+![confusion_1](https://github.com/Arc13Tangent/GCBICT/assets/117557116/a43dc38b-3924-4434-a73a-06dc16f1f5a5)
+
 
 ## Identification
-![Screen Shot 2024-02-01 at 11 39 14](https://github.com/Arc13Tangent/GCBICT/assets/117557116/60b320ce-f37e-4f35-ae0f-315f7d0d004e)
+![identify](https://github.com/Arc13Tangent/GCBICT/assets/117557116/2d4d2960-c363-49e4-a55d-7391e0900131)
+
 
 ## Result
-![test1](https://github.com/Arc13Tangent/GCBICT/assets/117557116/dee0e17e-b6ab-4453-bc66-3a544aa58b73)
+[result.pdf](https://github.com/Arc13Tangent/GCBICT/files/14399374/result.pdf)
+
 
 
 
