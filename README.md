@@ -49,7 +49,7 @@ After the above steps, type $\texttt{T}$ to obtain the model of support vector m
 After the training stage, users type $\texttt{E}$ to leave the training mode, and then type $\texttt{I}$ to select the identification mode. In the identification mode, choose the folder containing the images of unevaluated beans as input and use the model obtained in the training stage to identify the qualified and defective beans in the chosen folder.
 
 <div align="center">
-    <img src="https://imgur.com/undefined.png" alt="The identification mode demonstration"> 
+    <img src="https://imgur.com/25TkBbX.jpg" alt="The identification mode demonstration"> 
     <p>The identification mode demonstration</p>
 </div>
 <br> 
