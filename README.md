@@ -25,10 +25,10 @@ and $\texttt{D}$ to determine the directories of folders that contain qualified 
 and defective beans, respectively. Each folder can contain multiple images of
 beans.
 
-<center>
+<p align="center">
     <img src="https://imgur.com/ZaLMyu1.png" alt="Each folder consists of multiple images of beans"> 
     Each folder consists of multiple images of beans
-</center>
+</p>
 <br> 
 
 After the above steps, type $\texttt{T}$ to obtain the model of support vector machine (SVM) type. The model file is placed in the “Model” folder.
