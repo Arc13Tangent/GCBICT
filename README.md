@@ -15,6 +15,7 @@ Open the terminal, navigate to ```GCBICT``` and type ```python main.py```:
 $ cd GCBICT
 $ python main.py # or python3 main.py
 ```
+[Imgur](https://imgur.com/xYp3qFt)
 ![interface](https://imgur.com/xYp3qFt)
 
 ## Example: Qualified-Defective separator
