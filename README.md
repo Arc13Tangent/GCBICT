@@ -1,5 +1,5 @@
 # GCBICT: Green Coffee Bean IDentification Pipeline
-> Author: Shu-Min Tan, Je-Chiang Tsai, National Tsing Hua University.
+> Author: Shu-Min Tan, Shih-Hsun Hung, and Je-Chiang Tsai, National Tsing Hua University.
 > Last update: Feb 4, 2024
 
 ## Getting started
@@ -15,7 +15,7 @@ Open the terminal, navigate to ```GCBICT``` and type ```python main.py```:
 $ cd GCBICT
 $ python main.py # or python3 main.py
 ```
-![interface](https://hackmd.io/_uploads/HkfAKYt2a.jpg)
+![interface]([https://hackmd.io/_uploads/HkfAKYt2a.jpg](https://imgur.com/xYp3qFt))
 
 ## Example: Qualified-Defective separator
 ## Training
