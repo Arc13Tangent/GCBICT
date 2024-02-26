@@ -26,8 +26,7 @@ and defective beans, respectively. Each folder can contain multiple images of
 beans.
 
 <center>
-    <blockquote class="imgur-embed-pub" lang="en" data-id="ZaLMyu1"><a href="https://imgur.com/ZaLMyu1">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
-    <img src="https://imgur.com/ZaLMyu1" alt="Each folder consists of multiple images of beans"> 
+    <img src="https://imgur.com/ZaLMyu1.png" alt="Each folder consists of multiple images of beans"> 
     Each folder consists of multiple images of beans
 </center>
 <br> 
