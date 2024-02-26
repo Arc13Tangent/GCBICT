@@ -1,4 +1,4 @@
-# GCBICT: Green Coffee Bean IDentification Pipeline
+# GCBICT: Green Coffee Bean Identification Command-line Tool
 > Author: Shu-Min Tan, Shih-Hsun Hung, and Je-Chiang Tsai, National Tsing Hua University.
 > Last update: Feb 4, 2024
 
