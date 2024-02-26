@@ -1,4 +1,4 @@
-# GCBICT: Green Coffee Bean IDentification Pipeline
+![folder](https://github.com/Arc13Tangent/GCBICT/assets/117557116/a976a433-a48c-46aa-87dc-25a12b3a4677)# GCBICT: Green Coffee Bean IDentification Pipeline
 > Author: Shu-Min Tan, Je-Chiang Tsai, National Tsing Hua University.  
 > Last update: Feb 4, 2024
 
@@ -21,7 +21,7 @@ $ python main.py # or python3 main.py
 
 ## Example: Qualified-Defective separator
 ## Training
-[folder.pdf](https://github.com/Arc13Tangent/GCBICT/files/14399364/folder.pdf)
+![folder](https://github.com/Arc13Tangent/GCBICT/assets/117557116/a5885961-bf97-4a8e-ba0b-408b50163e45)
 ![training](https://github.com/Arc13Tangent/GCBICT/assets/117557116/690d0e50-2d8d-432d-86cf-edf4eb30e3d2)
 ![confusion_1](https://github.com/Arc13Tangent/GCBICT/assets/117557116/a43dc38b-3924-4434-a73a-06dc16f1f5a5)
 
@@ -31,7 +31,8 @@ $ python main.py # or python3 main.py
 
 
 ## Result
-[result.pdf](https://github.com/Arc13Tangent/GCBICT/files/14399374/result.pdf)
+![result](https://github.com/Arc13Tangent/GCBICT/assets/117557116/df510901-eef8-4170-bc30-7f78edc5a096)
+
 
 
 
