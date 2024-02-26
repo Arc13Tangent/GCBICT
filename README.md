@@ -1,4 +1,4 @@
-![folder](https://github.com/Arc13Tangent/GCBICT/assets/117557116/a976a433-a48c-46aa-87dc-25a12b3a4677)# GCBICT: Green Coffee Bean IDentification Pipeline
+# GCBICT: Green Coffee Bean IDentification Pipeline
 > Author: Shu-Min Tan, Je-Chiang Tsai, National Tsing Hua University.  
 > Last update: Feb 4, 2024
 
