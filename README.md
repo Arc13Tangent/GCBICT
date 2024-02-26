@@ -1,4 +1,4 @@
-# GCBICT: Green Coffee Bean IDentification Pipeline
+# GCBICT: Green Coffee Bean Identification Command-line Tool
 > Author: Shu-Min Tan, Shih-Hsun Hung, and Je-Chiang Tsai, National Tsing Hua University.
 > Last update: Feb 4, 2024
 
@@ -49,13 +49,13 @@ After the above steps, type $\texttt{T}$ to obtain the model of support vector m
 After the training stage, users type $\texttt{E}$ to leave the training mode, and then type $\texttt{I}$ to select the identification mode. In the identification mode, choose the folder containing the images of unevaluated beans as input and use the model obtained in the training stage to identify the qualified and defective beans in the chosen folder.
 
 <div align="center">
-    <img src="https://imgur.com/25TkBbX.jpg" alt="The identification mode demonstration"> 
+    <img src="https://imgur.com/undefined.png" alt="The identification mode demonstration"> 
     <p>The identification mode demonstration</p>
 </div>
 <br> 
 
 ## Result
 <center>
-    <img src="https://imgur.com/vHAGCNy.jpg" alt="The identification result"> 
+    <img src="https://imgur.com/0dk0OoE.png" alt="The identification result"> 
 </center>
 <br> 
