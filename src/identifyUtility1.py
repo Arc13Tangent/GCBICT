@@ -22,9 +22,9 @@ def predict(inputPath, coffeeModel):
             pred = coffeeModel.predict(data.reshape(1, -1))
 
             if pred == 0:
-                cv2.rectangle(image, (x, y), (x+w, y+h), (0, 255, 0), 1) # green for qualified
+                cv2.rectangle(image, (x, y), (x+w, y+h), (0, 255, 0), 2) # green for qualified
             else:
-                cv2.rectangle(image, (x, y), (x+w, y+h), (0, 0, 255), 1) # red for defective
+                cv2.rectangle(image, (x, y), (x+w, y+h), (0, 0, 255), 2) # red for defective
                 
     imageName = os.path.basename(inputPath)
     filename = 'Result/' + imageName
