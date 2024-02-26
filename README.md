@@ -15,8 +15,8 @@ Open the terminal, navigate to ```GCBICT``` and type ```python main.py```:
 $ cd GCBICT
 $ python main.py # or python3 main.py
 ```
-![Imgur](https://imgur.com/xYp3qFt)
-![interface](https://imgur.com/xYp3qFt)
+![interface](https://github.com/Arc13Tangent/GCBICT/assets/117557116/66a0c720-ce80-49c2-a0e7-1fdd08ddde61)
+
 
 ## Example: Qualified-Defective separator
 ## Training
