@@ -15,7 +15,7 @@ Open the terminal, navigate to ```GCBICT``` and type ```python main.py```:
 $ cd GCBICT
 $ python main.py # or python3 main.py
 ```
-![interface]([https://hackmd.io/_uploads/HkfAKYt2a.jpg](https://imgur.com/xYp3qFt))
+[Imgur](https://imgur.com/xYp3qFt)
 
 ## Example: Qualified-Defective separator
 ## Training
@@ -25,7 +25,7 @@ and defective beans, respectively. Each folder can contain multiple images of
 beans.
 
 <center>
-    <img src="https://hackmd.io/_uploads/S1m19tt2p.png" alt="Each folder consists of multiple images of beans"> 
+    <img src="https://imgur.com/ZaLMyu1" alt="Each folder consists of multiple images of beans"> 
     Each folder consists of multiple images of beans
 </center>
 <br> 
