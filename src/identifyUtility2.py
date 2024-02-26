@@ -2,8 +2,8 @@ import os
 import cv2
 import numpy as np
 import joblib
-from cut import cut
-from compute import compute
+from src.cut import cut
+from src.compute import compute
 from scipy.stats import norm
 import random
 

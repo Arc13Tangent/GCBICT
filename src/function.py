@@ -1,6 +1,5 @@
-from function1_mode import function1_Training, function1_Identify
-from function2_mode import function2_Training, function2_Identify
-from colorama import Fore, Style
+from src.function1_mode import function1_Training, function1_Identify
+from src.function2_mode import function2_Training, function2_Identify
 
 def function1():
     while True:

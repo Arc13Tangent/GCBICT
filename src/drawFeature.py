@@ -12,8 +12,8 @@ from sklearn.metrics import accuracy_score, confusion_matrix
 import matplotlib.pyplot as plt
 import joblib
 import random
-from cut import cut
-from compute import compute
+from src.cut import cut
+from src.compute import compute
 
 def drawFeature(inputPath_defective, inputPath_qualified):
     qualifiedFiles = glob.glob(os.path.join(inputPath_qualified, '*.jpg'))

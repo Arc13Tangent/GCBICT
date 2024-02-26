@@ -1,9 +1,9 @@
 import time
 from colorama import Fore, Style
-from trainingUtilities1 import createCoffeeDataset, trainModel
+from src.trainingUtilities1 import createCoffeeDataset, trainModel
 import joblib
-from identifyUtility1 import predict
-from drawFeature import drawFeature
+from src.identifyUtility1 import predict
+from src.drawFeature import drawFeature
 
 def function1_Training():
     while True:

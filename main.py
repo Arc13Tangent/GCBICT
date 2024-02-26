@@ -1,26 +1,9 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
 import time
 import joblib
 
-from function import function
-
-
-# In[3]:
-
+from src.function import function
 
 if __name__ == "__main__":
     print(' ⛾ Welcome to GCBICT! ⛾ ')
     print('⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺')
     function()
-
-
-# In[ ]:
-
-
-
-

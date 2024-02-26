@@ -1,8 +1,8 @@
 import time
 from colorama import Fore, Style
-from trainingUtilities2 import createCoffeeDataset, trainModel
+from src.trainingUtilities2 import createCoffeeDataset, trainModel
 import joblib
-from identifyUtility2 import predict
+from src.identifyUtility2 import predict
 
 def function2_Training():
     while True:

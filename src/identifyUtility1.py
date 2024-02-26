@@ -2,8 +2,8 @@ import os
 import cv2
 import numpy as np
 import joblib
-from cut import cut
-from compute import compute
+from src.cut import cut
+from src.compute import compute
 from scipy.stats import norm
 
 def predict(inputPath, coffeeModel):
@@ -29,4 +29,3 @@ def predict(inputPath, coffeeModel):
     imageName = os.path.basename(inputPath)
     filename = 'Result/' + imageName
     cv2.imwrite(filename, image)
-

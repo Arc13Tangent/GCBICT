@@ -11,8 +11,8 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, confusion_matrix
 import matplotlib.pyplot as plt
 import joblib
-from cut import cut
-from compute import compute
+from src.cut import cut
+from src.compute import compute
 
 
 # Define class for coffee beans data
@@ -27,6 +27,7 @@ class beansData:
 # Read img and generate data
 def getData(inputPath, label):
 
+    attributesNames = ['R_mean', 'R_std', 'G_mean', 'G_std', 'B_mean', 'B_std']
     attributesValues = []
     allLabel = []
     
@@ -42,28 +43,25 @@ def getData(inputPath, label):
                 singleData = compute(singleBean)
                 attributesValues.append(singleData)
                 allLabel.append(label)
-        
-    return attributesValues, allLabel
+    return attributesNames, attributesValues, allLabel
 
-
-def allData(inputPath):
-
-    attributesNames = ['R_mean', 'R_std', 'G_mean', 'G_std', 'B_mean', 'B_std']
-    attributesValues = []
-    allLabels = []
+def allData(inputPath_defective, inputPath_qualified):
     
-    for i in range(0, len(inputPath)):
-        values, labels = getData(inputPath[i], i+1)
-        attributesValues = attributesValues + values
-        allLabels = allLabels + labels
-        
-    return attributesNames, np.array(attributesValues), np.array(allLabels)
+    attributesNames_d, attributesValues_d,labels_d = getData(inputPath_defective, 1)
+    
+    attributesNames_q, attributesValues_q,labels_q = getData(inputPath_qualified, 0)
+    
+    attributesNames = attributesNames_d
+    attributesValues = np.array(attributesValues_d + attributesValues_q)
+    labels = np.array(labels_d + labels_q)
+    
+    return attributesNames, attributesValues,labels
 
 
 # Create dataset via class
-def createCoffeeDataset(inputPath):
+def createCoffeeDataset(inputPath_defective, inputPath_qualified):
 
-    attributesNames, attributesValues, labels = allData(inputPath)
+    attributesNames, attributesValues, labels = allData(inputPath_defective, inputPath_qualified)
     
     CoffeeDataset = beansData(attributesNames, attributesValues, labels)
     
@@ -75,7 +73,7 @@ def trainAndTest(CoffeeDataset):
 
     trainIndices, testIndices = (
         train_test_split(range(len(CoffeeDataset.AttributesValues)), \
-                         test_size=0.6,random_state=0, stratify = CoffeeDataset.Labels) 
+                         test_size=0.1,random_state=0, stratify = CoffeeDataset.Labels) 
     )
 
     trainData = CoffeeDataset.AttributesValues[trainIndices]
@@ -94,52 +92,22 @@ def trainModel(CoffeeDataset):
     CoffeeModel = svm.SVC(kernel='linear')
     
     CoffeeModel.fit(trainData, trainLabel)
-    joblib.dump(CoffeeModel, 'Model/coffee_model_multi.pkl')
-    
+    joblib.dump(CoffeeModel, 'Model/coffee_model.pkl')
+
     predictLabel = CoffeeModel.predict(testData)
     output_format = "{:.2f}"
     print("\n  Accuracy: {}%".format(output_format.format(100*metrics.accuracy_score(testLabel, predictLabel))))
-    print("  F1 score:", metrics.f1_score(testLabel, predictLabel, average = 'weighted'))
+    print("  F1 score:",metrics.f1_score(testLabel, predictLabel))
     matrix = confusion_matrix(testLabel, predictLabel)
-
     print("  Confusion Matrix:")
-    num = matrix.shape[0]
-    for i in range(0, num):
-        if i == num-1:
-            print("Predicted")
-        elif i == 0:
-            print("\t   Predicted ", end='')
-        else:
-            print("Predicted ", end='')
-            
-    for i in range(0, num):
-        if i == num-1:
-            print("      {}".format("{:4d}".format(i+1)))
-        elif i == 0:
-            print("\t\t{}".format("{:4d}".format(i+1)), end='')
-        else:
-            print("      {}".format("{:4d}".format(i+1)), end='')
+    print("\t\t\tPredicted\tPredicted")
+    print("\t\t\tqualified\tdefective")
+    print("  Actual qualified \t{}\t\t{}".format(matrix[0, 0], matrix[0, 1]))
+    print("  Actual defective \t{}\t\t{}".format(matrix[1, 0], matrix[1, 1]))
 
-    for i in range(0, num):
-        if i == num-1:
-            print("----------")
-        elif i == 0:
-            print("  ------------------", end='')
-        else:
-            print("----------", end='')
-            
-    for i in range(0, num):
-        for j in range(0, num):
-            if j == num-1:
-                print("      {}".format("{:4d}".format(matrix[i, j])))
-            elif j == 0:
-                print("  Actual {}\t{}".format(i+1, "{:4d}".format(matrix[i, j])), end='')
-            else:
-                print("      {}".format("{:4d}".format(matrix[i, j])), end='')
-
-    xticklabels = [f'Site {i+1}' for i in range(num)]
-    yticklabels = [f'Site {i+1}' for i in range(num)]
-    sns.heatmap(matrix, annot=True, fmt="d", cmap="Blues", cbar=False, yticklabels=yticklabels, xticklabels=xticklabels, vmax=200)
+    xticklabels = ['qualified', 'defective']
+    yticklabels = ['qualified', 'defective']
+    sns.heatmap(matrix, annot=True, fmt="d", cmap="Blues", cbar=False, yticklabels=yticklabels, xticklabels=xticklabels)
     plt.xlabel('Predicted')
     plt.ylabel('True')
     plt.title('Confusion matrix for the model')
