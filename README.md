@@ -1,6 +1,6 @@
 # GCBICT: Green Coffee Bean Identification Command-line Tool
 > Author: Shu-Min Tan, Shih-Hsun Hung, and Je-Chiang Tsai, National Tsing Hua University.
-> Last update: Feb 4, 2024
+> Last update: Mar 1, 2024
 
 ## Getting started
 To install all the required packages, open the terminal, navigate to ```GCBICT``` and type ```pip install -r Requirements.txt``` in the command line:
