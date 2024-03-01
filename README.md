@@ -5,20 +5,20 @@
 ## Getting started
 To clone the source code from GitHub, type 
 ```console
-git clone https://github.com/Arc13Tangent/GCBICT.git
+$ git clone https://github.com/Arc13Tangent/GCBICT.git
 ```
 in the command line, then navigate to the GCBICT folder and type 
 ```console
-cd GCBICT
-pip install -r Requirements.txt
+$ cd GCBICT
+$ pip install -r Requirements.txt
 ```
 to install all the required packages specified in the ```Requirements.txt```.
 
 ## Using GCBICT
 To run GCBICT, open the terminal, navigate to the GCBICT folder, and input the command ```python main.py```:
 ```console
-cd GCBICT
-python main.py # or python3 main.py
+$ cd GCBICT
+$ python main.py # or python3 main.py
 ```
 <div align="center">
 <img src="https://i.imgur.com/LJ7UPyF.jpeg" alt="The GCBICT interface">
@@ -30,9 +30,8 @@ Users type $\texttt{Q}$ to select the Qualified-Defective separator. Then type $
 and $\texttt{D}$ to determine the directories of folders that contain qualified beans
 and defective beans, respectively. Each folder can contain multiple images of
 beans.
-
 <div align="center">
-    <img src="https://imgur.com/ZaLMyu1.png" alt="Each folder consists of multiple images of beans"> 
+    <img src="https://imgur.com/GFhqhlQ.png" alt="Each folder consists of multiple images of beans"> 
     <p>Each folder consists of multiple images of beans</p>
 </div>
 <br> 
