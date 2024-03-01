@@ -1,5 +1,5 @@
 # GCBICT: Green Coffee Bean Identification Command-line Tool
-> Author: Shu-Min Tan, Shih-Hsun Hung, and Je-Chiang Tsai, National Tsing Hua University./
+> Author: Shu-Min Tan, Shih-Hsun Hung, and Je-Chiang Tsai, National Tsing Hua University.\
 > Last update: Mar 1, 2024
 
 ## Getting started
