@@ -5,11 +5,11 @@
 ## Getting started
 To clone the source code from GitHub, type 
 ```console
-git clone https://github.com/Arc13Tangent/GCBICT.git
+$ git clone https://github.com/Arc13Tangent/GCBICT.git
 ```
 in the command line, then navigate to the GCBICT folder and type 
 ```console
-pip install -r Requirements.txt
+$ pip install -r Requirements.txt
 ```
 to install all the required packages specified in the ```Requirements.txt```.
 ```console
