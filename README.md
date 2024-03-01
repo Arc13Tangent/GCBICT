@@ -5,23 +5,20 @@
 ## Getting started
 To clone the source code from GitHub, type 
 ```console
-$ git clone https://github.com/Arc13Tangent/GCBICT.git
+git clone https://github.com/Arc13Tangent/GCBICT.git
 ```
 in the command line, then navigate to the GCBICT folder and type 
 ```console
-$ pip install -r Requirements.txt
+cd GCBICT
+pip install -r Requirements.txt
 ```
 to install all the required packages specified in the ```Requirements.txt```.
-```console
-$ cd GCBICT
-$ pip install -r Requirements.txt
-```
 
 ## Using GCBICT
-Open the terminal, navigate to ```GCBICT``` and type ```python main.py```:
+To run GCBICT, open the terminal, navigate to the GCBICT folder, and input the command ```python main.py```:
 ```console
-$ cd GCBICT
-$ python main.py # or python3 main.py
+cd GCBICT
+python main.py # or python3 main.py
 ```
 <div align="center">
 <img src="https://i.imgur.com/LJ7UPyF.jpeg" alt="The GCBICT interface">
