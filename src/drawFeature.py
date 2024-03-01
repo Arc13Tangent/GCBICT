@@ -58,15 +58,15 @@ def drawFeature(inputPath_defective, inputPath_qualified):
         rmbkB = B[condition]
         plt.subplot(231)
         sns.kdeplot(rmbkR, cumulative=False, fill=False)
-        plt.title('Red Grayscale')
+        plt.xlabel('Red grayscale value')
         
         plt.subplot(232)
         sns.kdeplot(rmbkG, cumulative=False, fill=False)
-        plt.title('Green Grayscale')
+        plt.xlabel('Green grayscale value')
         
         plt.subplot(233)
         sns.kdeplot(rmbkB, cumulative=False, fill=False)
-        plt.title('green Grayscale')
+        plt.xlabel('Blue grayscale value')
 
     # plot defective feature
     for i in random_numbers:
