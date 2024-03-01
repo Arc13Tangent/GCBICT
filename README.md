@@ -3,7 +3,15 @@
 > Last update: Mar 1, 2024
 
 ## Getting started
-To install all the required packages, open the terminal, navigate to ```GCBICT``` and type ```pip install -r Requirements.txt``` in the command line:
+To clone the source code from GitHub, type 
+```console
+git clone https://github.com/Arc13Tangent/GCBICT.git
+```
+in the command line, then navigate to the GCBICT folder and type 
+```console
+pip install -r Requirements.txt
+```
+to install all the required packages specified in the ```Requirements.txt```.
 ```console
 $ cd GCBICT
 $ pip install -r Requirements.txt
@@ -16,10 +24,10 @@ $ cd GCBICT
 $ python main.py # or python3 main.py
 ```
 <div align="center">
-<img src="https://imgur.com/xYp3qFt.jpg" alt="The GCBICT interface">
+<img src="https://i.imgur.com/LJ7UPyF.jpeg" alt="The GCBICT interface">
 </div>
 
-## Example: Qualified-Defective separator
+## Example 1: Identification of qualified beans
 ## Training
 Users type $\texttt{Q}$ to select the Qualified-Defective separator. Then type $\texttt{Q}$
 and $\texttt{D}$ to determine the directories of folders that contain qualified beans
