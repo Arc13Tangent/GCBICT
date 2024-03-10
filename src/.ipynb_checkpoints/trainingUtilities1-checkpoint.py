@@ -10,6 +10,7 @@ from sklearn import metrics
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, confusion_matrix
 import matplotlib.pyplot as plt
+import matplotlib as mpl
 import joblib
 from src.cut import cut
 from src.compute import compute
@@ -107,8 +108,13 @@ def trainModel(CoffeeDataset):
 
     xticklabels = ['qualified', 'defective']
     yticklabels = ['qualified', 'defective']
-    sns.heatmap(matrix, annot=True, fmt="d", cmap="Blues", cbar=False, yticklabels=yticklabels, xticklabels=xticklabels)
-    plt.xlabel('Predicted')
-    plt.ylabel('True')
-    plt.title('Confusion matrix for the model')
+    sns.set(font_scale=2.5,rc={'figure.figsize':(9.5,7)})
+    mpl.rcParams['axes.labelweight'] = 'bold'
+    mpl.rcParams['font.weight'] = 'bold'
+    sns.heatmap(matrix, annot=True, fmt="d", cmap="Blues", cbar=False, 
+                yticklabels=yticklabels, xticklabels=xticklabels,
+                annot_kws={"size": 40}) 
+    plt.xlabel('Predicted', fontsize=24)
+    plt.ylabel('True', fontsize=24)
+    plt.title('Confusion matrix for the model', fontsize=28, fontweight='bold')
     plt.show()

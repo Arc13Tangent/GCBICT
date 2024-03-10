@@ -44,7 +44,7 @@ def drawFeature(inputPath_defective, inputPath_qualified):
     sample_num = min(30, int(m*0.3))
     random_numbers = random.sample(range(0, m), sample_num)
 
-    sns.set(rc={'figure.figsize':(7.5,5)})
+    sns.set(rc={'figure.figsize':(9.5,7)})
     # plot qualified feature
     for i in random_numbers:
         singleBean = qualifiedBeanImages[i]
