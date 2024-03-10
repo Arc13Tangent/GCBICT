@@ -13,6 +13,21 @@ $ cd GCBICT
 $ pip install -r Requirements.txt
 ```
 to install all the required packages specified in the ```Requirements.txt```.
+<div align="center">
+<img src="https://i.imgur.com/zrBsxc5.jpeg" alt="Install all the requirements specified in the Requirements.txt">
+</div>
+
+## Software architecture
+The command-line tool GCBICT consists of two functions: (1) the Qualified-Defective Separator and (2) the Mixed Separator.
+The Qualified-Defective Separator allows users to choose the images of multiple qualified and defective green coffee beans in the train stage, then train the machine learning model to obtain model parameters, and finally apply the trained model to the image of unevaluated beans to identify their quality. The Mixed Separator allows users to choose the images of a group of qualified beans with multiple growing sites/varieties, then train the machine learning model to obtain model parameters, and finally apply the trained model to the images of a group of qualified beans with multiple growing sites/varieties to identify their growing sites/varieties. Users can view the model details and identification results in the ``Model'' and ``Result'' folders. The algorithms that use our color characteristics of the seat coat of green coffee beans in GCBICT are patented.
+<div align="center">
+<img src="https://i.imgur.com/pXUZgFl.png" alt="The GCBICT architecture">
+</div>
+<div align="center">
+<img src="https://i.imgur.com/TvBkyDS.png" alt="The GCBICT architecture">
+<p>Our recently
+discovered intrinsic color characteristics of the seat coat of green coffee beans. Panels (A), (B), (C) present the statistical features of the chosen 30 qualified beans, while (D), (E), (F) give the statistical features of the chosen 30 defective beans.</p>
+</div>
 
 ## Using GCBICT
 To run GCBICT, open the terminal, navigate to the GCBICT folder, and input the command ```python main.py```:
