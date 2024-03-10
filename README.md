@@ -19,9 +19,10 @@ to install all the required packages specified in the ```Requirements.txt```.
 
 ## Software architecture
 The command-line tool GCBICT consists of two functions: (1) the Qualified-Defective Separator and (2) the Mixed Separator.
-The Qualified-Defective Separator allows users to choose the images of multiple qualified and defective green coffee beans in the train stage, then train the machine learning model to obtain model parameters, and finally apply the trained model to the image of unevaluated beans to identify their quality. The Mixed Separator allows users to choose the images of a group of qualified beans with multiple growing sites/varieties, then train the machine learning model to obtain model parameters, and finally apply the trained model to the images of a group of qualified beans with multiple growing sites/varieties to identify their growing sites/varieties. Users can view the model details and identification results in the ``Model'' and ``Result'' folders. The algorithms that use our color characteristics of the seat coat of green coffee beans in GCBICT are patented.
+The Qualified-Defective Separator allows users to choose the images of multiple qualified and defective green coffee beans in the training stage, then train the machine learning model to obtain model parameters, and finally apply the trained model to the image of unevaluated beans to identify their quality. The Mixed Separator allows users to choose the images of a group of qualified beans with multiple growing sites/varieties, then train the machine learning model to obtain model parameters, and finally apply the trained model to the images of a group of qualified beans with multiple growing sites/varieties to identify their growing sites/varieties. Users can view the model details and identification results in the ```Model``` and ```Result``` folders. The algorithms that use our color characteristics of the seat coat of green coffee beans in GCBICT are patented.
 <div align="center">
 <img src="https://i.imgur.com/pXUZgFl.png" alt="The GCBICT architecture">
+<p>The GCBICT architecture</p>
 </div>
 <div align="center">
 <img src="https://i.imgur.com/TvBkyDS.png" alt="The GCBICT architecture">
