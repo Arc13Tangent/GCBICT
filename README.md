@@ -1,6 +1,6 @@
 # GCBICT: Green Coffee Bean Identification Command-line Tool
 > Author: Shu-Min Tan, Shih-Hsun Hung, and Je-Chiang Tsai, National Tsing Hua University.\
-> Last update: Mar 1, 2024
+> Last update: Mar 10, 2024
 
 ## Getting started
 To clone the source code from GitHub, type 
