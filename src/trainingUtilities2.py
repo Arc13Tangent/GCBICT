@@ -15,6 +15,8 @@ import joblib
 from src.cut import cut
 from src.compute import compute
 
+from sklearn.model_selection import GridSearchCV 
+
 
 # Define class for coffee beans data
 class beansData:
@@ -92,10 +94,17 @@ def trainAndTest(CoffeeDataset):
 def trainModel(CoffeeDataset):
 
     trainIndices, testIndices, trainData, testData, trainLabel, testLabel = trainAndTest(CoffeeDataset)
-    CoffeeModel = svm.SVC(kernel='linear')
+
+    param_grid = {'C': [0.001, 0.01, 0.1, 1, 10],
+                  'gamma': [1, 0.1, 0.01, 0.001, 0.0001]}
+
+    CoffeeModel = GridSearchCV(svm.SVC(), param_grid, refit = True, verbose = 1) 
+    #CoffeeModel = svm.SVC(kernel='linear')
     
     CoffeeModel.fit(trainData, trainLabel)
     joblib.dump(CoffeeModel, 'Model/coffee_model_multi.pkl')
+    print(f"\n  The best parameter is {CoffeeModel.best_params_}") 
+    print(f"\n  Test scores: {CoffeeModel.cv_results_['mean_test_score']}") 
     
     predictLabel = CoffeeModel.predict(testData)
     output_format = "{:.2f}"
