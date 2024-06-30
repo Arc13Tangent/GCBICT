@@ -110,6 +110,8 @@ def trainModel(CoffeeDataset):
     print("\n  Accuracy: {}%".format(output_format.format(100*metrics.accuracy_score(testLabel, predictLabel))))
     print("  F1 score:",metrics.f1_score(testLabel, predictLabel))
     matrix = confusion_matrix(testLabel, predictLabel)
+
+    # Confusion Matrix
     print("  Confusion Matrix:")
     print("\t\t\tPredicted\tPredicted")
     print("\t\t\tqualified\tdefective")
@@ -118,13 +120,17 @@ def trainModel(CoffeeDataset):
 
     xticklabels = ['qualified', 'defective']
     yticklabels = ['qualified', 'defective']
+
     sns.set(font_scale=2.5,rc={'figure.figsize':(9.5,7)})
     mpl.rcParams['axes.labelweight'] = 'bold'
     mpl.rcParams['font.weight'] = 'bold'
-    sns.heatmap(matrix, annot=True, fmt="d", cmap="Blues", cbar=False, 
-                yticklabels=yticklabels, xticklabels=xticklabels,
-                annot_kws={"size": 40}) 
+
+    sns.heatmap(matrix, fmt = '', cmap="Blues", cbar=False, 
+            yticklabels=yticklabels, xticklabels=xticklabels,
+            annot_kws={"size": 40}, 
+            annot=[[f"TN\n({matrix[0][0]:.0f})", f"FP\n({matrix[0][1]:.0f})"], [f"FN\n({matrix[1][0]:.0f})", f"TP\n({matrix[1][1]:.0f})"]]) 
+
     plt.xlabel('Predicted', fontsize=24)
-    plt.ylabel('True', fontsize=24)
+    plt.ylabel('Actual', fontsize=24)
     plt.title('Confusion matrix for the model', fontsize=28, fontweight='bold')
     plt.show()
