@@ -130,7 +130,7 @@ def trainModel(CoffeeDataset):
             annot_kws={"size": 40}, 
             annot=[[f"TN\n({matrix[0][0]:.0f})", f"FP\n({matrix[0][1]:.0f})"], [f"FN\n({matrix[1][0]:.0f})", f"TP\n({matrix[1][1]:.0f})"]]) 
 
-    plt.xlabel('Predicted', fontsize=24)
-    plt.ylabel('Actual', fontsize=24)
+    plt.xlabel('Predicted Values', fontsize=24)
+    plt.ylabel('Actual Values', fontsize=24)
     plt.title('Confusion matrix for the model', fontsize=28, fontweight='bold')
     plt.show()
