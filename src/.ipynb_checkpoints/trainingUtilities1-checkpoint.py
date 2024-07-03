@@ -50,9 +50,9 @@ def getData(inputPath, label):
 
 def allData(inputPath_defective, inputPath_qualified):
     
-    attributesNames_d, attributesValues_d,labels_d = getData(inputPath_defective, 1)
+    attributesNames_d, attributesValues_d,labels_d = getData(inputPath_defective, 0)
     
-    attributesNames_q, attributesValues_q,labels_q = getData(inputPath_qualified, 0)
+    attributesNames_q, attributesValues_q,labels_q = getData(inputPath_qualified, 1)
     
     attributesNames = attributesNames_d
     attributesValues = np.array(attributesValues_d + attributesValues_q)
@@ -114,12 +114,12 @@ def trainModel(CoffeeDataset):
     # Confusion Matrix
     print("  Confusion Matrix:")
     print("\t\t\tPredicted\tPredicted")
-    print("\t\t\tqualified\tdefective")
-    print("  Actual qualified \t{}\t\t{}".format(matrix[0, 0], matrix[0, 1]))
-    print("  Actual defective \t{}\t\t{}".format(matrix[1, 0], matrix[1, 1]))
+    print("\t\t\tdefective\tqualified")
+    print("  Actual defective \t{}\t\t{}".format(matrix[0, 0], matrix[0, 1]))
+    print("  Actual qualified \t{}\t\t{}".format(matrix[1, 0], matrix[1, 1]))
 
-    xticklabels = ['qualified', 'defective']
-    yticklabels = ['qualified', 'defective']
+    xticklabels = ['defective', 'qualified']
+    yticklabels = ['defective', 'qualified']
 
     sns.set(font_scale=2.5,rc={'figure.figsize':(9.5,7)})
     mpl.rcParams['axes.labelweight'] = 'bold'
