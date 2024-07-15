@@ -76,7 +76,7 @@ def trainAndTest(CoffeeDataset):
 
     trainIndices, testIndices = (
         train_test_split(range(len(CoffeeDataset.AttributesValues)), \
-                         test_size=0.1,random_state=0, stratify = CoffeeDataset.Labels) 
+                         test_size=0.1,random_state=3, stratify = CoffeeDataset.Labels) 
     )
 
     trainData = CoffeeDataset.AttributesValues[trainIndices]

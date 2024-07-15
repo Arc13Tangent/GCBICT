@@ -21,7 +21,7 @@ def predict(inputPath, coffeeModel):
             data = np.array(compute(singleBean))
             pred = coffeeModel.predict(data.reshape(1, -1))
 
-            if pred == 0:
+            if pred == 1:
                 cv2.rectangle(image, (x, y), (x+w, y+h), (0, 255, 0), 2) # green for qualified
             else:
                 cv2.rectangle(image, (x, y), (x+w, y+h), (0, 0, 255), 2) # red for defective
